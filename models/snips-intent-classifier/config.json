@@ -1,0 +1,48 @@
+{
+  "activation": "gelu",
+  "architectures": [
+    "DistilBertForSequenceClassification"
+  ],
+  "attention_dropout": 0.1,
+  "dim": 768,
+  "dropout": 0.1,
+  "hidden_dim": 3072,
+  "id2label": {
+    "0": "ComparePlaces",
+    "1": "RequestRide",
+    "2": "GetWeather",
+    "3": "SearchPlace",
+    "4": "GetPlaceDetails",
+    "5": "ShareCurrentLocation",
+    "6": "GetTrafficInformation",
+    "7": "BookRestaurant",
+    "8": "GetDirections",
+    "9": "ShareETA"
+  },
+  "initializer_range": 0.02,
+  "label2id": {
+    "BookRestaurant": 7,
+    "ComparePlaces": 0,
+    "GetDirections": 8,
+    "GetPlaceDetails": 4,
+    "GetTrafficInformation": 6,
+    "GetWeather": 2,
+    "RequestRide": 1,
+    "SearchPlace": 3,
+    "ShareCurrentLocation": 5,
+    "ShareETA": 9
+  },
+  "max_position_embeddings": 512,
+  "model_type": "distilbert",
+  "n_heads": 12,
+  "n_layers": 6,
+  "pad_token_id": 0,
+  "problem_type": "single_label_classification",
+  "qa_dropout": 0.1,
+  "seq_classif_dropout": 0.2,
+  "sinusoidal_pos_embds": false,
+  "tie_weights_": true,
+  "torch_dtype": "float32",
+  "transformers_version": "4.53.1",
+  "vocab_size": 30522
+}
